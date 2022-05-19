@@ -39,6 +39,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product-type.product-type"
+    },
+    "title": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }

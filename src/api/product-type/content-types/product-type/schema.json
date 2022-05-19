@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product-type",
     "pluralName": "product-types",
-    "displayName": "Product-type"
+    "displayName": "Product-type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -12,22 +13,13 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "enumeration",
-      "enum": [
-        "console",
-        "gameSwitch",
-        "gamePS5",
-        "gameXBOX",
-        "gamePC",
-        "headset",
-        "monitor",
-        "mouse",
-        "keyboard",
-        "controller",
-        "cable",
-        "mousepad",
-        "other"
-      ],
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "type": {
+      "type": "uid",
+      "targetField": "title",
       "required": true
     }
   }
