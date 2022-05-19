@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "puchases",
+  "info": {
+    "singularName": "puchase",
+    "pluralName": "puchases",
+    "displayName": "Puchase"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "puchase"
+    },
+    "Item": {
+      "displayName": "Items",
+      "type": "component",
+      "repeatable": true,
+      "component": "purchase.items"
+    }
+  }
+}

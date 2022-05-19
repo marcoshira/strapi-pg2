@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_purchase_items",
+  "info": {
+    "displayName": "Items",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "Quantity": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
