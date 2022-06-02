@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_cart_quantity_cart_quantities",
+  "info": {
+    "displayName": "cartQuantity",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    }
+  }
+}

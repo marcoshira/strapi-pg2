@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cart_quantities",
+  "info": {
+    "singularName": "cart-quantity",
+    "pluralName": "cart-quantities",
+    "displayName": "Cart Quantity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cartQuantity": {
+      "displayName": "cartQuantity",
+      "type": "component",
+      "repeatable": true,
+      "component": "cart-quantity.cart-quantity"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "cart_quantity"
+    }
+  }
+}

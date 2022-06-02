@@ -74,6 +74,24 @@
       "relation": "oneToOne",
       "target": "api::puchase.puchase",
       "inversedBy": "user"
+    },
+    "address": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "cart_quantity": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cart-quantity.cart-quantity",
+      "inversedBy": "users_permissions_user"
+    },
+    "favorite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::favorite.favorite",
+      "inversedBy": "users_permissions_user"
     }
   }
 }
